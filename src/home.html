@@ -357,7 +357,7 @@
             <div class="text-left">
                 <button onclick="closeSignUpModal()"
                     class="text-white text-2xl font-bold float-right text-red-500">&times;</button>
-                <h3 class="text-xl font-bold mb-6">ĐĂNG Ký</h3>
+                <h3 class="text-xl font-bold mb-6">ĐĂNG KÝ</h3>
             </div>
             <form>
                 <div class="flex gap-6 mb-6">
@@ -444,49 +444,7 @@
             </form>
         </div>
     </div>
-
-    <script>
-        function openSignUpModal() {
-            document.getElementById('signupModal').style.display = 'flex';
-            closeLoginModal();
-        }
-
-        function closeSignUpModal() {
-            document.getElementById('signupModal').style.display = 'none';
-        }
-
-        function openLoginModal() {
-            document.getElementById('loginModal').style.display = 'flex';
-            closeSignUpModal();
-        }
-
-        function closeLoginModal() {
-            document.getElementById('loginModal').style.display = 'none';
-        }
-
-        function switchToSignUp() {
-            closeLoginModal();
-            openSignUpModal();
-        }
-
-        function switchToLogin() {
-            closeSignUpModal();
-            openLoginModal();
-        }
-
-        window.onclick = function (event) {
-            let signupModal = document.getElementById('signupModal');
-            let loginModal = document.getElementById('loginModal');
-            if (event.target === signupModal) {
-                closeSignUpModal();
-            }
-            if (event.target === loginModal) {
-                closeLoginModal();
-            }
-        }
-    </script>
-
-
+    <script src="./home.js"></script>
 </body>
 
 </html>
