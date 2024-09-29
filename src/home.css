@@ -1,0 +1,25 @@
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+.movie-card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-img {
+    width: 249px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.live-dot {
+    height: 12px;
+    width: 12px;
+    background-color: #f00;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+}
